@@ -4,7 +4,7 @@ parse_git_branch() {
     if [[ $branch == "" ]]; then
         echo ""
     else
-        echo -e "\e[38;5;165m$branch\e[0m "
+        echo -e "\e[38;5;129m$branch\e[0m "
     fi
 }
 
