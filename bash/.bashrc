@@ -1,10 +1,15 @@
 parse_git_branch() {
     local branch="$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')"
+    local changes=""
+
+    if [[ ! "$(git diff 2> /dev/null)" == "" ]]; then
+        changes="*"
+    fi
 
     if [[ $branch == "" ]]; then
         echo ""
     else
-        echo -e "\e[38;5;222m$branch\e[0m "
+        echo -e "\e[38;5;222m$branch$changes\e[0m "
     fi
 }
 
