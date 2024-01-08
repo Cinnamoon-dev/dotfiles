@@ -2,7 +2,7 @@ parse_git_branch() {
     local branch="$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')"
     local changes=""
 
-    if [[ ! "$(git diff 2> /dev/null)" == "" ]]; then
+    if [[ -z "$(git ls-files --others --exclude-standard --directory --no-empty-directory --error-unmatch -- ':/*' >/dev/null 2>/dev/null)" ]]; then
         changes="*"
     fi
 
