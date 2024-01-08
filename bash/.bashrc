@@ -6,7 +6,7 @@ parse_git_branch() {
         changes="*"
     fi
 
-    if [[ $branch == "" ]]; then
+    if [[ -z $branch ]]; then
         echo ""
     else
         echo -e "\e[38;5;222m$branch$changes\e[0m "
