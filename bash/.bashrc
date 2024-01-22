@@ -15,7 +15,7 @@ parse_git_branch() {
 
 right_arrow=$(echo -e "\uf054")
 
-PS1='${debian_chroot:+($debian_chroot)} \u \[\033[01;34m\]\w\[\033[00m\] $(parse_git_branch)${right_arrow} '
+PS1=' \u \[\033[01;34m\]\w\[\033[00m\] $(parse_git_branch)${right_arrow} '
 
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh'
