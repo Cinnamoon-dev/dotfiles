@@ -22,3 +22,5 @@ alias l='ls -lh'
 alias lx='ls -lhX'
 alias la='ls -lhA'
 alias lax='ls -lhAX'
+
+HISTTIMEFORMAT="%d/%m/%y  %T "
