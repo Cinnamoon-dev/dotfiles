@@ -1,6 +1,6 @@
 right_arrow=$(echo -e "\uf054")
 
-PS1=' \u \[\033[01;34m\]\w\[\033[00m\]$(__git_ps1) ${right_arrow} '
+PS1=' \u \[\033[01;34m\]\w\[\033[00m\]\e[38;5;222m$(__git_ps1)\e[0m ${right_arrow} '
 
 alias ls='ls --color=auto --group-directories-first --time-style=iso'
 alias l='ls -lh'
