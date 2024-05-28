@@ -8,4 +8,5 @@
     "workbench.activityBar.location": "bottom",
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false
+    "breadcrumbs.enabled": false
 }
