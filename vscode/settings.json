@@ -1,0 +1,11 @@
+{
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "editor.lineHeight": 1.8,
+    "window.customTitleBarVisibility": "auto",
+    "workbench.activityBar.location": "bottom",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false
+}
