@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+git config --global core.editor "nvim" # or "vim", "nano", ...
