@@ -9,3 +9,5 @@ alias la='ls -lhA'
 alias lax='ls -lhAX'
 
 HISTTIMEFORMAT="%d/%m/%y  %T "
+
+eval "$(fzf --bash)"
