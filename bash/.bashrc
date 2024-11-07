@@ -8,6 +8,9 @@ alias lx='ls -lhX'
 alias la='ls -lhA'
 alias lax='ls -lhAX'
 
+alias d="docker"
+alias dc="docker compose"
+
 HISTTIMEFORMAT="%d/%m/%y  %T "
 
 eval "$(fzf --bash)"
